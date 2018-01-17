@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<title>Automatically add references and content to the WIX installer | Arjan Hordijk</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://ahordijk.wordpress.com/xmlrpc.php">
+
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s.pubmine.com/">
+<link rel="dns-prefetch" href="https://x.bidswitch.net/">
+<link rel="dns-prefetch" href="https://static.criteo.net/">
+<link rel="dns-prefetch" href="https://ib.adnxs.com/">
+<link rel="dns-prefetch" href="https://aax.amazon-adsystem.com/">
+<link rel="dns-prefetch" href="https://bidder.criteo.com/">
+<link rel="dns-prefetch" href="https://cas.criteo.com/">
+<link rel="dns-prefetch" href="https://gum.criteo.com/">
+<link rel="dns-prefetch" href="https://ads.pubmatic.com/">
+<link rel="dns-prefetch" href="https://gads.pubmatic.com/">
+<link rel="dns-prefetch" href="https://tpc.googlesyndication.com/">
+<link rel="dns-prefetch" href="https://ad.doubleclick.net/">
+<link rel="dns-prefetch" href="https://googleads.g.doubleclick.net/">
+<link rel="dns-prefetch" href="https://www.googletagservices.com/">
+<link rel="dns-prefetch" href="https://cdn.switchadhub.com/">
+<link rel="dns-prefetch" href="https://delivery.g.switchadhub.com/">
+<link rel="dns-prefetch" href="https://delivery.swid.switchadhub.com/">
+<link rel="alternate" type="application/rss+xml" title="Arjan Hordijk » Feed" href="https://ahordijk.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Arjan Hordijk » Comments Feed" href="https://ahordijk.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Arjan Hordijk » Automatically add references and content to the WIX installer Comments Feed" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1505864856h&ver=4.9.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="all-css-0-1" href="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource" type="text/css" media="all">
+<script type="text/javascript" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource(1)"></script>
+<link rel="stylesheet" id="all-css-0-2" href="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ahordijk.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Creating A WIX installer in VS2012" href="https://ahordijk.wordpress.com/2013/03/26/creating-a-wix-installer-in-vs2012/">
+<link rel="next" title="Building SharePoint 2013 MVVM Apps – The Bucket List" href="https://ahordijk.wordpress.com/2013/04/05/building-sharepoint-2013-mvvm-apps-the-bucket-list/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/">
+<link rel="shortlink" href="https://wp.me/p1R61s-1n">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fahordijk.wordpress.com%2F2013%2F03%2F26%2Fautomatically-add-references-and-content-to-the-wix-installer%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fahordijk.wordpress.com%2F2013%2F03%2F26%2Fautomatically-add-references-and-content-to-the-wix-installer%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Automatically add references and content to the WIX installer">
+<meta property="og:url" content="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/">
+<meta property="og:description" content="In my previous post I created a WIX installer with the WizWix. The downside is that you need to add all the references by hand. And when new references are added you need to know this before you ca…">
+<meta property="article:published_time" content="2013-03-26T23:19:21+00:00">
+<meta property="article:modified_time" content="2013-04-05T15:05:56+00:00">
+<meta property="og:site_name" content="Arjan Hordijk">
+<meta property="og:image" content="https://ahordijk.files.wordpress.com/2013/03/image_thumb19.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:text:title" content="Automatically add references and content to the WIX installer">
+<meta name="twitter:image" content="https://ahordijk.files.wordpress.com/2013/03/image_thumb8.png?w=240">
+<meta name="twitter:card" content="summary">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/e662865bca358c5bcc3ca7493606c15f?s=32" sizes="16x16">
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/e662865bca358c5bcc3ca7493606c15f?s=32" sizes="16x16">
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/e662865bca358c5bcc3ca7493606c15f?s=114">
+<link rel="openid.server" href="https://ahordijk.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://ahordijk.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://ahordijk.wordpress.com/osd.xml" title="Arjan Hordijk">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Arjan Hordijk"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Blogs about tech related topics, mostly Microsoft :-)"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://ahordijk.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/e662865bca358c5bcc3ca7493606c15f?s=16"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="Automatically add references and content to the WIX installer | Arjan Hordijk on WordPress.com">
+<meta name="description" content="In my previous post I created a WIX installer with the WizWix. The downside is that you need to add all the references by hand. And when new references are added you need to know this before you can build the installer. In the WixDemo project I have added three new class libraries and an…">
+		<script type="text/javascript">
+		var __ATA_PP = { pt: 1, ht: 0, tn: 'responsive', amp: false };
+		var __ATA = __ATA || {};
+		__ATA.cmd = __ATA.cmd || [];
+		__ATA.criteo = __ATA.criteo || {};
+		__ATA.criteo.cmd = __ATA.criteo.cmd || [];
+		</script>
+		<script type="text/javascript" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/publishertag.js"></script>
+		<script type="text/javascript" src="https://s.pubmine.com/head.js" async=""></script><link rel="amphtml" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script type="text/javascript" async="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/ga.js"></script>
+<script charset="utf-8" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/rate.php"></script><script charset="utf-8" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/rate(1).php"></script><script charset="utf-8" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/rate(2).php"></script><script charset="utf-8" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/rate(3).php"></script><script charset="utf-8" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/rate(4).php"></script><style type="text/css"></style><script type="text/javascript" async="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource(2)"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/services.css"><script type="text/javascript" async="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource(3)"></script><style type="text/css" id="pd_popup_holder_style_6780689_post_85">#pd_popup_holder_6780689_post_85 { position:absolute; display:none; width:350px; height:auto; top:0px; left:0px; z-index:10000; border:solid 1px #CCC; background-color:white; padding:0px 15px;font-family:Arial,Sans;box-shadow: -10px 10px 20px rgba(0, 0, 0, .5);-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25);-moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25); }</style><style type="text/css" id="pd_popup_holder_style_6780691_comm_11">#pd_popup_holder_6780691_comm_11 { position:absolute; display:none; width:350px; height:auto; top:0px; left:0px; z-index:10000; border:solid 1px #CCC; background-color:white; padding:0px 15px;font-family:Arial,Sans;box-shadow: -10px 10px 20px rgba(0, 0, 0, .5);-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25);-moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25); }</style><style type="text/css" id="pd_popup_holder_style_6780691_comm_12">#pd_popup_holder_6780691_comm_12 { position:absolute; display:none; width:350px; height:auto; top:0px; left:0px; z-index:10000; border:solid 1px #CCC; background-color:white; padding:0px 15px;font-family:Arial,Sans;box-shadow: -10px 10px 20px rgba(0, 0, 0, .5);-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25);-moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25); }</style><style type="text/css" id="pd_popup_holder_style_6780691_comm_14">#pd_popup_holder_6780691_comm_14 { position:absolute; display:none; width:350px; height:auto; top:0px; left:0px; z-index:10000; border:solid 1px #CCC; background-color:white; padding:0px 15px;font-family:Arial,Sans;box-shadow: -10px 10px 20px rgba(0, 0, 0, .5);-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25);-moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25); }</style><style type="text/css" id="pd_popup_holder_style_6780691_comm_15">#pd_popup_holder_6780691_comm_15 { position:absolute; display:none; width:350px; height:auto; top:0px; left:0px; z-index:10000; border:solid 1px #CCC; background-color:white; padding:0px 15px;font-family:Arial,Sans;box-shadow: -10px 10px 20px rgba(0, 0, 0, .5);-webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25);-moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, .25); }</style><script type="text/javascript" async="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/link"></script><script type="text/javascript" async="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/track.php"></script><script src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/f1d6b9c35aafc02c71dd9b6c0f4cacf5.json" type="text/javascript"></script></head>
+
+<body class="post-template-default single single-post postid-85 single-format-standard mp6 customizer-styles-applied highlander-enabled highlander-light">
+
+<div id="container" class="hfeed">
+
+	<div id="header">
+
+		
+	
+		<div id="logo">
+							<span class="site-name site-title"><a href="https://ahordijk.wordpress.com/" title="Arjan Hordijk" rel="home">Arjan Hordijk</a></span>
+			<span class="site-description">Blogs about tech related topics, mostly Microsoft :-)</span>
+		</div>
+
+	
+	
+			<nav role="navigation" class="site-navigation main-navigation">
+			<h1 class="assistive-text">Menu</h1>
+			<div class="assistive-text skip-link"><a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#content" title="Skip to content">Skip to content</a></div>
+
+			<ul class="menu">
+<li><a href="https://ahordijk.wordpress.com/">Home</a></li></ul>
+		</nav><!-- .site-navigation .main-navigation -->
+	
+	
+	</div><!-- end of #header -->
+
+	<div id="wrapper" class="clearfix">
+		<div id="content" class="grid col-620">
+
+
+		
+			<div class="breadcrumb-list"><a href="https://ahordijk.wordpress.com/">Home</a> <span class="chevron">›</span> <a href="https://ahordijk.wordpress.com/category/heat/">Heat</a> <span class="chevron">›</span> <span class="breadcrumb-current">Automatically add references and content to the WIX&nbsp;installer</span></div>
+			<div id="post-85" class="post-85 post type-post status-publish format-standard hentry category-heat category-visual-studio-2012 category-wix tag-heat tag-installer tag-vs2012 tag-wix tag-wizwix">
+				<h1 class="post-title">Automatically add references and content to the WIX&nbsp;installer</h1>
+
+				<div class="post-meta">
+					<span class="meta-prep meta-prep-author posted">Posted on </span><a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/" title="11:19 pm" rel="bookmark"><span class="timestamp">March 26, 2013</span></a><span class="byline"> by </span><span class="author vcard"><a class="url fn n" href="https://ahordijk.wordpress.com/author/ahordijk/" title="View all posts by ahordijk">ahordijk</a></span>
+											<span class="comments-link">
+							<span class="mdash">—</span>
+							<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#comments">4 Comments</a>						</span>
+									</div><!-- end of .post-meta -->
+
+				<div class="post-entry">
+					<p>In my <a href="https://ahordijk.wordpress.com/2013/03/26/creating-a-wix-installer-in-vs2012/" target="_blank">previous post</a> I created a WIX installer with the WizWix. The downside is that you need to add all the references by hand. And when new references are added you need to know this before you can build the installer. </p>
+<p>In the WixDemo project I have added three new class libraries and an image. The class libraries are added as reference and the image is set to Content </p>
+<p><a href="https://ahordijk.files.wordpress.com/2013/03/image8.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb8.png" width="133" height="244"></a> <a href="https://ahordijk.files.wordpress.com/2013/03/image9.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb9.png" width="244" height="92"></a> </p>
+<p>In the previous post I started with WizWix wizard. But now I want the project output to be added automatically to the Installer:</p>
+<h2>Adding Binaries with the Heat Harvest Tool</h2>
+<p>Add a pre build event to harvest all binaries from the project output of the WixDemo project. This is done by the <a href="http://wix.sourceforge.net/manual-wix3/heat.htm" target="_blank">Heat Harvest Tool</a>. </p>
+<div class="csharpcode-wrapper">
+<pre id="codeSnippet" class="csharpcode">call <span class="str">"C:\Program Files (x86)\WiX Toolset v3.7\bin\<span class="skimlinks-unlinked">heat.exe</span>"</span> <br>dir <span class="str">"$(TargetDir)."</span>  -var var.WixDemo.TargetDir -dr APPLICATIONFOLDER <br>-cg Binaries -ag -scom -sreg -sfrag –srd <br>-o <span class="str">"$(SolutionDir)Installer\$(ProjectName).<span class="skimlinks-unlinked">Binaries.wxs</span>"</span></pre>
+</div>
+<div class="csharpcode-wrapper">This will create a <span class="skimlinks-unlinked">wixdemo.binaries.wxs</span> file which you can add as a Link in your installer project.</div>
+<div class="csharpcode-wrapper"><a href="https://ahordijk.files.wordpress.com/2013/03/image10.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb10.png" width="264" height="148"></a> </div>
+<div class="csharpcode-wrapper">The <span class="skimlinks-unlinked">WixDemo.Binaries.wxs</span> holds all binaries from the WixDemo output directory:</div>
+<div class="csharpcode-wrapper">&nbsp;</div>
+<div class="csharpcode-wrapper"><a href="https://ahordijk.files.wordpress.com/2013/03/image11.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb11.png" width="463" height="295"></a></div>
+<div class="csharpcode-wrapper">&nbsp;</div>
+<div class="csharpcode-wrapper">In the installer directory we now need to modify the <span class="skimlinks-unlinked">Features.wxs</span> file. In the file a Fragment is added which references to the Binaries section in our <span class="skimlinks-unlinked">WixDemo.Binaries.wxs</span> </div>
+<div class="csharpcode-wrapper">&nbsp;<a href="https://ahordijk.files.wordpress.com/2013/03/image12.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb12.png" width="444" height="222"></a> </div>
+<p>When you build the installer project at this point you will get all kind of ICE30 errors. The problem is that the <span class="skimlinks-unlinked">WixDemo.exe</span> exists in the <span class="skimlinks-unlinked">Folder.wxs</span> and in the <span class="skimlinks-unlinked">WixDemo.Binaries.wxs</span>.</p>
+<p><a href="https://ahordijk.files.wordpress.com/2013/03/image13.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb13.png" width="429" height="317"></a> </p>
+<p></p>
+<p></p>
+<h2>Filter the Binaries file</h2>
+<p>The <span class="skimlinks-unlinked">Folder.wxs</span> holds the shortcut and folder information for the WixDemo installer. This is something you want to keep. Therefore the <span class="skimlinks-unlinked">WixDemo.exe</span> needs to be removed from the <span class="skimlinks-unlinked">WixDemo.Binaries.wxs</span> file. Taking a closer look at this file I also want to skip pdb files as well. This is done by adding an xslt filter file to the build event.</p>
+<p>First add an XSLT Filter file to the installer directory:</p>
+<p><a href="https://ahordijk.files.wordpress.com/2013/03/image14.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb14.png" width="183" height="244"></a></p>
+<p>The Filter holds the following search key’s:</p>
+<div id="codeSnippetWrapper" style="overflow:auto;cursor:text;font-size:8pt;border-top:silver 1px solid;font-family:&#39;Courier New&#39;, courier, monospace;border-right:silver 1px solid;border-bottom:silver 1px solid;direction:ltr;text-align:left;margin:20px 0 10px;border-left:silver 1px solid;line-height:12pt;max-height:200px;width:97.5%;background-color:#f4f4f4;padding:4px;">
+<pre id="codeSnippet" style="overflow:visible;font-size:8pt;height:343px;font-family:&#39;Courier New&#39;, courier, monospace;color:black;direction:ltr;text-align:left;margin:0;line-height:12pt;width:100%;background-color:#f4f4f4;border-style:none;padding:0;">&lt;?xml version=<span style="color:#006080;">"1.0"</span> encoding=<span style="color:#006080;">"UTF-8"</span>?&gt;<br>&lt;xsl:stylesheet version=<span style="color:#006080;">"1.0"</span><br>xmlns:xsl=<span style="color:#006080;">"<span class="skimlinks-unlinked">http://www.w3.org/1999/XSL/Transform</span>"</span><br>xmlns:wix=<span style="color:#006080;">"<span class="skimlinks-unlinked">http://schemas.microsoft.com/wix/2006/wi</span>"</span>&gt;<br>  &lt;xsl:output method=<span style="color:#006080;">"xml"</span> indent=<span style="color:#006080;">"yes"</span> /&gt;<br>  &lt;xsl:template match=<span style="color:#006080;">"@*|node()"</span>&gt;<br>    &lt;xsl:copy&gt;<br>      &lt;xsl:apply-templates select=<span style="color:#006080;">"@*|node()"</span>/&gt;<br>    &lt;/xsl:copy&gt;<br>  &lt;/xsl:template&gt;<br>  &lt;xsl:key name=<span style="color:#006080;">"service-search"</span> match=<span style="color:#006080;">"wix:Component[contains(wix:File/@Source, '.pdb')]"</span> use=<span style="color:#006080;">"@Id"</span> /&gt;<br>  &lt;xsl:key name=<span style="color:#006080;">"service-search"</span> match=<span style="color:#006080;">"wix:Component[contains(wix:File/@Source, '.xml')]"</span> use=<span style="color:#006080;">"@Id"</span> /&gt;<br>  &lt;xsl:key name=<span style="color:#006080;">"service-search"</span> match=<span style="color:#006080;">"wix:Component[contains(wix:File/@Source, '.dll.config')]"</span> use=<span style="color:#006080;">"@Id"</span> /&gt;<br>  &lt;xsl:key name=<span style="color:#006080;">"service-search"</span> match=<span style="color:#006080;">"wix:Component[contains(wix:File/@Source, '.<span class="skimlinks-unlinked">vshost.exe</span>')]"</span> use=<span style="color:#006080;">"@Id"</span> /&gt;<br>  &lt;xsl:key name=<span style="color:#006080;">"service-search"</span> match=<span style="color:#006080;">"wix:Component[contains(wix:File/@Source, 'app.confing')]"</span> use=<span style="color:#006080;">"@Id"</span> /&gt;<br>  &lt;xsl:key name=<span style="color:#006080;">"service-search"</span> match=<span style="color:#006080;">"wix:Component[wix:File/@Source = '$(var.WIXDemo.TargetDir)\<span class="skimlinks-unlinked">WIXDemo.exe</span>']"</span> use=<span style="color:#006080;">"@Id"</span> /&gt;<br>  &lt;xsl:template match=<span style="color:#006080;">"wix:Component[key('service-search', @Id)]"</span> /&gt;<br>  &lt;xsl:template match=<span style="color:#006080;">"wix:ComponentRef[key('service-search', @Id)]"</span> /&gt;<br>&lt;/xsl:stylesheet&gt;</pre>
+<p></p></div>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>This will remove all pdb, xml, dll.config, <span class="skimlinks-unlinked">vshost.exe</span> en the <span class="skimlinks-unlinked">WIXDemo.exe</span> file from the Binaries file. There is only one thing we need to add extra to the heat pre build event:</p>
+<div id="codeSnippetWrapper" style="overflow:auto;cursor:text;font-size:8pt;border-top:silver 1px solid;font-family:&#39;Courier New&#39;, courier, monospace;border-right:silver 1px solid;border-bottom:silver 1px solid;direction:ltr;text-align:left;margin:20px 0 10px;border-left:silver 1px solid;line-height:12pt;max-height:200px;width:97.5%;background-color:#f4f4f4;padding:4px;">
+<pre id="codeSnippet" style="overflow:visible;font-size:8pt;font-family:&#39;Courier New&#39;, courier, monospace;color:black;direction:ltr;text-align:left;margin:0;line-height:12pt;width:100%;background-color:#f4f4f4;border-style:none;padding:0;">-t <span style="color:#006080;">"$(SolutionDir)Installer\<span class="skimlinks-unlinked">Filter.xslt</span>"</span> </pre>
+<p></p></div>
+<p>The complete pre build event for the binaries is now:</p>
+<div id="codeSnippetWrapper" style="overflow:auto;cursor:text;font-size:8pt;border-top:silver 1px solid;font-family:&#39;Courier New&#39;, courier, monospace;border-right:silver 1px solid;border-bottom:silver 1px solid;direction:ltr;text-align:left;margin:20px 0 10px;border-left:silver 1px solid;line-height:12pt;max-height:200px;width:97.5%;background-color:#f4f4f4;padding:4px;">
+<pre id="codeSnippet" style="overflow:visible;font-size:8pt;font-family:&#39;Courier New&#39;, courier, monospace;color:black;direction:ltr;text-align:left;margin:0;line-height:12pt;width:100%;background-color:#f4f4f4;border-style:none;padding:0;">call <span style="color:#006080;">"C:\Program Files (x86)\WiX Toolset v3.7\bin\<span class="skimlinks-unlinked">heat.exe</span>"</span> dir <span style="color:#006080;">"$(TargetDir)."</span>  -t <span style="color:#006080;">"$(SolutionDir)Installer\<span class="skimlinks-unlinked">Filter.xslt</span>"</span> -var var.WIXDemo.TargetDir -dr APPLICATIONFOLDER -cg Binaries -ag -scom -sreg -sfrag -srd -o <span style="color:#006080;">"$(SolutionDir)Installer\$(ProjectName).<span class="skimlinks-unlinked">Binaries.wxs</span>"</span></pre>
+<p></p></div>
+<p>After building the installer the <span class="skimlinks-unlinked">WixDemo.Binaries.wxs</span> file looks like this:</p>
+<p><a href="https://ahordijk.files.wordpress.com/2013/03/image15.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb15.png" width="481" height="292"></a> </p>
+<p></p>
+<p>Installing the MSI will show that the binaries and exe are placed in the install directory:</p>
+<p><a href="https://ahordijk.files.wordpress.com/2013/03/image16.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb16.png" width="244" height="77"></a> </p>
+<h2>Adding Content</h2>
+<p>Finally I the content (image) needs to be installed as well. Add the following line to the pre build event:</p>
+<div id="codeSnippetWrapper" style="overflow:auto;cursor:text;font-size:8pt;border-top:silver 1px solid;font-family:&#39;Courier New&#39;, courier, monospace;border-right:silver 1px solid;border-bottom:silver 1px solid;direction:ltr;text-align:left;margin:20px 0 10px;border-left:silver 1px solid;line-height:12pt;max-height:200px;width:97.5%;background-color:#f4f4f4;padding:4px;">
+<pre id="codeSnippet" style="overflow:visible;font-size:8pt;font-family:&#39;Courier New&#39;, courier, monospace;color:black;direction:ltr;text-align:left;margin:0;line-height:12pt;width:100%;background-color:#f4f4f4;border-style:none;padding:0;">call <span style="color:#006080;">"C:\Program Files (x86)\WiX Toolset v3.7\bin\<span class="skimlinks-unlinked">heat.exe</span>"</span> project <span style="color:#006080;">"$(ProjectPath)"</span> -directoryid APPLICATIONFOLDER -pog Content -ag -scom -sreg -sfrag -o <span style="color:#006080;">"$(SolutionDir)Installer\$(ProjectName).<span class="skimlinks-unlinked">Content.wxs</span>"</span></pre>
+<p></p></div>
+<p></p>
+<p>This will create an <span class="skimlinks-unlinked">WixDemo.Content.wxs</span> file you will need to Add As Link to your Install Project.</p>
+<p><a href="https://ahordijk.files.wordpress.com/2013/03/image17.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb17.png" width="545" height="194"></a> </p>
+<p>All you need to do now is add the WIXDemo.Content to the Fragment in the <span class="skimlinks-unlinked">Feature.wxs</span> file:</p>
+<div id="codeSnippetWrapper" style="overflow:auto;cursor:text;font-size:8pt;border-top:silver 1px solid;font-family:&#39;Courier New&#39;, courier, monospace;border-right:silver 1px solid;border-bottom:silver 1px solid;direction:ltr;text-align:left;margin:20px 0 10px;border-left:silver 1px solid;line-height:12pt;max-height:200px;width:97.5%;background-color:#f4f4f4;padding:4px;">
+<pre id="codeSnippet" style="overflow:visible;font-size:8pt;font-family:&#39;Courier New&#39;, courier, monospace;color:black;direction:ltr;text-align:left;margin:0;line-height:12pt;width:100%;background-color:#f4f4f4;border-style:none;padding:0;">&lt;Wix xmlns=<span style="color:#006080;">"<span class="skimlinks-unlinked">http://schemas.microsoft.com/wix/2006/wi</span>"</span>&gt;<br>  &lt;Fragment&gt;<br>    &lt;FeatureGroup Id=<span style="color:#006080;">"CompleteFeatures"</span>&gt;<br>      &lt;Feature Id=<span style="color:#006080;">"Complete"</span> Level=<span style="color:#006080;">"1"</span>&gt;<br>        &lt;ComponentGroupRef Id=<span style="color:#006080;">"ProductComponents"</span>/&gt;<br>        &lt;ComponentRef Id=<span style="color:#006080;">"ProgramMenuDir"</span> /&gt;<br>        &lt;ComponentRef Id=<span style="color:#006080;">"CMP_WIXDemo"</span> /&gt;<br>      &lt;/Feature&gt;<br>    &lt;/FeatureGroup&gt;<br>  &lt;/Fragment&gt;<br>  &lt;Fragment&gt;<br>    &lt;ComponentGroup Id=<span style="color:#006080;">"ProductComponents"</span> Directory=<span style="color:#006080;">"APPLICATIONFOLDER"</span>&gt;<br>      &lt;ComponentGroupRef Id=<span style="color:#006080;">"Binaries"</span>/&gt;<br>      &lt;ComponentGroupRef Id=<span style="color:#006080;">"WIXDemo.Content"</span>/&gt;<br>    &lt;/ComponentGroup&gt;<br>  &lt;/Fragment&gt;<br>&lt;/Wix&gt;</pre>
+<p></p></div>
+<p></p>
+<p>After installing this new installer you will see the resources directory and image in the installation directory:</p>
+<p><a href="https://ahordijk.files.wordpress.com/2013/03/image18.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb18.png" width="244" height="134"></a> <a href="https://ahordijk.files.wordpress.com/2013/03/image19.png"><img title="image" style="display:inline;border-width:0;" border="0" alt="image" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/image_thumb19.png" width="244" height="98"></a> </p>
+<h2>Conclusion</h2>
+<p></p>
+<p>Now you have best of both worlds. A nice WIX installer structure with Feature, Folder and Product wxs files all created in the first place by the WizWix. And next to that you do not need to worry about adding references and content to your installer. This is done by the Heat Harvesting Tool. The project and source code can be found on <a href="http://wixdemo.codeplex.com/SourceControl/changeset/view/25144" target="_blank">CodePlex</a>!</p>
+		<div class="wpcnt">
+			<div class="wpa wpmrec" style="display: inline-block !important;">
+				<span class="wpa-about">Advertisements</span>
+				<div class="u">		<div style="padding-bottom:15px;width:300px;height:250px;float:left;margin-right:5px;margin-top:0px">
+		<div id="atatags-26942">
+			<script type="text/javascript">
+			__ATA.cmd.push(function() {
+				__ATA.initSlot('atatags-26942',  {
+					collapseEmpty: 'before',
+					sectionId: '26942',
+					width: 300,
+					height: 250
+				});
+			});
+			</script>
+		</div></div>		<div style="padding-bottom:15px;width:300px;height:250px;float:left;margin-top:0px">
+		<div id="atatags-114160">
+			<script type="text/javascript">
+			__ATA.cmd.push(function() {
+				__ATA.initSlot('atatags-114160',  {
+					collapseEmpty: 'before',
+					sectionId: '114160',
+					width: 300,
+					height: 250
+				});
+			});
+			</script>
+		</div></div></div>
+						<div id="crt-472163814" style="width: 300px; height: 250px; display: block !important;"><iframe src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/afr.html" id="crt-472163814_cto_iframe" frameborder="0" marginwidth="0px" marginheight="0px" width="100%" height="100%" scrolling="no"></iframe></div>
+		<script type="text/javascript">
+(function(){var c=function(){var a=document.getElementById("crt-472163814");window.Criteo?(a.parentNode.style.setProperty("display","inline-block","important"),a.style.setProperty("display","block","important"),window.Criteo.DisplayAcceptableAdIfAdblocked({zoneid:388248,containerid:"crt-472163814",collapseContainerIfNotAdblocked:!0,callifnotadblocked:function(){a.style.setProperty("display","none","important");a.style.setProperty("visbility","hidden","important")}})):(a.style.setProperty("display","none","important"),a.style.setProperty("visibility","hidden","important"))};if(window.Criteo)c();else{if(!__ATA.criteo.script){var b=document.createElement("script");b.src="//static.criteo.net/js/ld/publishertag.js";b.onload=function(){for(var a=0;a<__ATA.criteo.cmd.length;a++){var b=__ATA.criteo.cmd[a];"function"===typeof b&&b()}};(document.head||document.getElementsByTagName("head")[0]).appendChild(b);__ATA.criteo.script=b}__ATA.criteo.cmd.push(c)}})();
+		</script>		<div id="crt-1359474842" style="width: 300px; height: 250px; display: block !important;"><iframe src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/afr(1).html" id="crt-1359474842_cto_iframe" frameborder="0" marginwidth="0px" marginheight="0px" width="100%" height="100%" scrolling="no"></iframe></div>
+		<script type="text/javascript">
+(function(){var c=function(){var a=document.getElementById("crt-1359474842");window.Criteo?(a.parentNode.style.setProperty("display","inline-block","important"),a.style.setProperty("display","block","important"),window.Criteo.DisplayAcceptableAdIfAdblocked({zoneid:837497,containerid:"crt-1359474842",collapseContainerIfNotAdblocked:!0,callifnotadblocked:function(){a.style.setProperty("display","none","important");a.style.setProperty("visbility","hidden","important")}})):(a.style.setProperty("display","none","important"),a.style.setProperty("visibility","hidden","important"))};if(window.Criteo)c();else{if(!__ATA.criteo.script){var b=document.createElement("script");b.src="//static.criteo.net/js/ld/publishertag.js";b.onload=function(){for(var a=0;a<__ATA.criteo.cmd.length;a++){var b=__ATA.criteo.cmd[a];"function"===typeof b&&b()}};(document.head||document.getElementsByTagName("head")[0]).appendChild(b);__ATA.criteo.script=b}__ATA.criteo.cmd.push(c)}})();
+		</script>
+			</div>
+		</div><div id="jp-post-flair" class="sharedaddy sd-rating-enabled sd-like-enabled sd-sharing-enabled"><div class="sd-block sd-rating"><h3 class="sd-title">Rate this:</h3><div class="pd-rating" id="pd_rating_holder_6780689_post_85" style="display: inline-block;"><div class="rating-icons" id="pd_rate_6780689_post_85" style="float:left;"><div class="rating-star-icon" onmouseout="PDRTJS_6780689_post_85.rebuild();" onclick="PDRTJS_6780689_post_85.rate(1);" onmouseover="PDRTJS_6780689_post_85.hover(1);" id="PDRTJS_6780689_post_85_stars_1" style="background-size: 32px 48px !important; cursor: pointer; width: 16px; height: 16px; line-height: 16px; background: url(https://polldaddy.com/images/ratings/star-yellow-sml.png) top left; float: left; padding: 0px; margin: 0px; margin-right: 1px;">&nbsp;</div><div class="rating-star-icon" onmouseout="PDRTJS_6780689_post_85.rebuild();" onclick="PDRTJS_6780689_post_85.rate(2);" onmouseover="PDRTJS_6780689_post_85.hover(2);" id="PDRTJS_6780689_post_85_stars_2" style="background-size: 32px 48px !important; cursor: pointer; width: 16px; height: 16px; line-height: 16px; background: url(https://polldaddy.com/images/ratings/star-yellow-sml.png) top left; float: left; padding: 0px; margin: 0px; margin-right: 1px;">&nbsp;</div><div class="rating-star-icon" onmouseout="PDRTJS_6780689_post_85.rebuild();" onclick="PDRTJS_6780689_post_85.rate(3);" onmouseover="PDRTJS_6780689_post_85.hover(3);" id="PDRTJS_6780689_post_85_stars_3" style="background-size: 32px 48px !important; cursor: pointer; width: 16px; height: 16px; line-height: 16px; background: url(https://polldaddy.com/images/ratings/star-yellow-sml.png) top left; float: left; padding: 0px; margin: 0px; margin-right: 1px;">&nbsp;</div><div class="rating-star-icon" onmouseout="PDRTJS_6780689_post_85.rebuild();" onclick="PDRTJS_6780689_post_85.rate(4);" onmouseover="PDRTJS_6780689_post_85.hover(4);" id="PDRTJS_6780689_post_85_stars_4" style="background-size: 32px 48px !important; cursor: pointer; width: 16px; height: 16px; line-height: 16px; background: url(https://polldaddy.com/images/ratings/star-yellow-sml.png) top left; float: left; padding: 0px; margin: 0px; margin-right: 1px;">&nbsp;</div><div class="rating-star-icon" onmouseout="PDRTJS_6780689_post_85.rebuild();" onclick="PDRTJS_6780689_post_85.rate(5);" onmouseover="PDRTJS_6780689_post_85.hover(5);" id="PDRTJS_6780689_post_85_stars_5" style="background-size: 32px 48px !important; cursor: pointer; width: 16px; height: 16px; line-height: 16px; background: url(https://polldaddy.com/images/ratings/star-yellow-sml.png) top left; float: left; padding: 0px; margin: 0px; margin-right: 1px;">&nbsp;</div></div><span style="float:left;">&nbsp;</span><div id="rating_info_6780689_post_85" style="display:block;float:left;background:url(https://polldaddy.com/images/ratings/info.png) no-repeat 3px 2px;width:16px;height:16px;cursor:pointer; null " onclick="javascript:PDRTJS_6780689_post_85.togglePopup();return false;"><span style="display:none;">i</span></div><div class="pd_popup_holder" id="pd_popup_holder_6780689_post_85">&nbsp;</div><div class="rating-msg" id="PDRTJS_6780689_post_85_msg" style="float:left; padding-left: 5px; text-align: left; font:normal normal /16px ; color: #;">5 Votes</div><p style="padding: 0px; margin: 0px; clear: both;"></p></div></div><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-85" class="share-twitter sd-button share-icon" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-85" class="share-linkedin sd-button share-icon" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-85" class="share-facebook sd-button share-icon" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-85" class="share-google-plus-1 sd-button share-icon" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-27430874-85-5a5f0ed937252" data-src="//widgets.wp.com/likes/#blog_id=27430874&amp;post_id=85&amp;origin=ahordijk.wordpress.com&amp;obj_id=27430874-85-5a5f0ed937252" data-name="like-post-frame-27430874-85-5a5f0ed937252"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-27430874-85-5a5f0ed937252" height="55px" width="100%" frameborder="0" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource.html"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div></div>
+					
+						<div id="author-meta">
+							<img alt="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/f1d6b9c35aafc02c71dd9b6c0f4cacf5" class="avatar avatar-80 grav-hashed grav-hijack" height="80" width="80" id="grav-f1d6b9c35aafc02c71dd9b6c0f4cacf5-0">							<div class="about-author">About <a href="https://ahordijk.wordpress.com/author/ahordijk/" title="Posts by ahordijk" rel="author">ahordijk</a></div>
+							<p>Microsoft .Net Lead Developer working at Centric with C#, HTML, Javascript, Css, MVC3, Silverlight....</p>
+						</div><!-- end of #author-meta -->
+
+					
+									</div><!-- end of .post-entry -->
+
+				<div class="navigation">
+					<div class="previous">‹ <a href="https://ahordijk.wordpress.com/2013/03/26/creating-a-wix-installer-in-vs2012/" rel="prev">Creating A WIX installer in&nbsp;VS2012</a></div>
+					<div class="next"><a href="https://ahordijk.wordpress.com/2013/04/05/building-sharepoint-2013-mvvm-apps-the-bucket-list/" rel="next">Building SharePoint 2013 MVVM Apps – The Bucket&nbsp;List</a> ›</div>
+				</div><!-- end of .navigation -->
+
+				<div class="post-data">
+					Tagged with: <a href="https://ahordijk.wordpress.com/tag/heat/" rel="tag">Heat</a>, <a href="https://ahordijk.wordpress.com/tag/installer/" rel="tag">Installer</a>, <a href="https://ahordijk.wordpress.com/tag/vs2012/" rel="tag">VS2012</a>, <a href="https://ahordijk.wordpress.com/tag/wix/" rel="tag">WIX</a>, <a href="https://ahordijk.wordpress.com/tag/wizwix/" rel="tag">WizWix</a><br>					Posted in <a href="https://ahordijk.wordpress.com/category/heat/" rel="category tag">Heat</a>, <a href="https://ahordijk.wordpress.com/category/visual-studio-2012/" rel="category tag">Visual Studio 2012</a>, <a href="https://ahordijk.wordpress.com/category/wix/" rel="category tag">WIX</a>				</div><!-- end of .post-data -->
+
+							</div><!-- end of #post-85 -->
+
+			
+
+	<h6 id="comments">
+		4 comments on “<span>Automatically add references and content to the WIX&nbsp;installer</span>”	</h6>
+
+	
+	<ol class="commentlist">
+				<li class="comment even thread-even depth-1 parent highlander-comment" id="comment-11">
+				<div id="div-comment-11" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/d07757938aa942b603f8e6b2b9599210" class="avatar avatar-60 grav-hashed grav-hijack" height="60" width="60" id="grav-d07757938aa942b603f8e6b2b9599210-0">			<cite class="fn">Isaiah Nelson</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#comment-11">
+			August 20, 2013 at 10:24 pm</a>		</div>
+
+		<p>Arjan, when I run your demo code straight from CodePlex, I am getting an error that the prebuild event exited with a code of 1. Please advise on how to fix this or what the problem might be. From what I can tell there shouldn’t be a problem.</p>
+<div class="pd-rating" id="pd_rating_holder_6780691_comm_11" style="display: inline-block;"><div class="rating-icons" id="pd_rate_6780691_comm_11" style="float:left;"><div class="rating-nero-icon" onmouseout="PDRTJS_6780691_comm_11.rebuild();" onclick="PDRTJS_6780691_comm_11.rate(1);" onmouseover="PDRTJS_6780691_comm_11.hover(1);" id="PDRTJS_6780691_comm_11_nero_1" style="background-size: 32px 32px !important; cursor: pointer; width: 16px; height: 16px;  line-height: 16px; background: url(https://polldaddy.com/images/ratings/nero-hand-sml.png) bottom left; float: left; padding: 0px; margin: 0px; margin: 0px;">&nbsp;</div><div class="rating-nero-value" id="PDRTJS_6780691_comm_11_msg_1" style="text-align: center; font:normal normal /16px ; color: #; float:left; padding: 0px 4px;">0</div><div class="rating-nero-icon" onmouseout="PDRTJS_6780691_comm_11.rebuild();" onclick="PDRTJS_6780691_comm_11.rate(2);" onmouseover="PDRTJS_6780691_comm_11.hover(2);" id="PDRTJS_6780691_comm_11_nero_2" style="background-size: 32px 32px !important; cursor: pointer; width: 16px; height: 16px;  line-height: 16px; background: url(https://polldaddy.com/images/ratings/nero-hand-sml.png) bottom right; float: left; padding: 0px; margin: 0px; margin: 0px;">&nbsp;</div><div class="rating-nero-value" id="PDRTJS_6780691_comm_11_msg_2" style="text-align: center; font:normal normal /16px ; color: #; float:left; padding: 0px 4px;">0</div></div><span style="float:left;">&nbsp;</span><div id="rating_info_6780691_comm_11" style="display:block;float:left;background:url(https://polldaddy.com/images/ratings/info.png) no-repeat 3px 2px;width:16px;height:16px;cursor:pointer; null " onclick="javascript:PDRTJS_6780691_comm_11.togglePopup();return false;"><span style="display:none;">i</span></div><div class="pd_popup_holder" id="pd_popup_holder_6780691_comm_11">&nbsp;</div><div class="rating-msg" id="PDRTJS_6780691_comm_11_msg" style="float:left; padding-left: 5px; text-align: left; font:normal normal /16px ; color: #;">Rate This</div><p style="padding: 0px; margin: 0px; clear: both;"></p></div>
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/?replytocom=11#respond" onclick="return addComment.moveForm( &quot;div-comment-11&quot;, &quot;11&quot;, &quot;respond&quot;, &quot;85&quot; )" aria-label="Reply to Isaiah Nelson">Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-ahordijk bypostauthor odd alt depth-2 parent highlander-comment" id="comment-12">
+				<div id="div-comment-12" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/f1d6b9c35aafc02c71dd9b6c0f4cacf5(1)" class="avatar avatar-60 grav-hashed grav-hijack" height="60" width="60" id="grav-f1d6b9c35aafc02c71dd9b6c0f4cacf5-1">			<cite class="fn"><a href="https://ahordijk.wordpress.com/" rel="external nofollow" class="url">ahordijk</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#comment-12">
+			August 22, 2013 at 2:29 pm</a>		</div>
+
+		<p>Hi Isaiah,<br>
+The prebuild events expects Wix installed in C:\Program Files (x86)\WiX Toolset v3.7.<br>
+Perhaps this is not the case in your environment? Hope this will help you.</p>
+<div class="pd-rating" id="pd_rating_holder_6780691_comm_12" style="display: inline-block;"><div class="rating-icons" id="pd_rate_6780691_comm_12" style="float:left;"><div class="rating-nero-icon" onmouseout="PDRTJS_6780691_comm_12.rebuild();" onclick="PDRTJS_6780691_comm_12.rate(1);" onmouseover="PDRTJS_6780691_comm_12.hover(1);" id="PDRTJS_6780691_comm_12_nero_1" style="background-size: 32px 32px !important; cursor: pointer; width: 16px; height: 16px;  line-height: 16px; background: url(https://polldaddy.com/images/ratings/nero-hand-sml.png) bottom left; float: left; padding: 0px; margin: 0px; margin: 0px;">&nbsp;</div><div class="rating-nero-value" id="PDRTJS_6780691_comm_12_msg_1" style="text-align: center; font:normal normal /16px ; color: #; float:left; padding: 0px 4px;">0</div><div class="rating-nero-icon" onmouseout="PDRTJS_6780691_comm_12.rebuild();" onclick="PDRTJS_6780691_comm_12.rate(2);" onmouseover="PDRTJS_6780691_comm_12.hover(2);" id="PDRTJS_6780691_comm_12_nero_2" style="background-size: 32px 32px !important; cursor: pointer; width: 16px; height: 16px;  line-height: 16px; background: url(https://polldaddy.com/images/ratings/nero-hand-sml.png) bottom right; float: left; padding: 0px; margin: 0px; margin: 0px;">&nbsp;</div><div class="rating-nero-value" id="PDRTJS_6780691_comm_12_msg_2" style="text-align: center; font:normal normal /16px ; color: #; float:left; padding: 0px 4px;">0</div></div><span style="float:left;">&nbsp;</span><div id="rating_info_6780691_comm_12" style="display:block;float:left;background:url(https://polldaddy.com/images/ratings/info.png) no-repeat 3px 2px;width:16px;height:16px;cursor:pointer; null " onclick="javascript:PDRTJS_6780691_comm_12.togglePopup();return false;"><span style="display:none;">i</span></div><div class="pd_popup_holder" id="pd_popup_holder_6780691_comm_12">&nbsp;</div><div class="rating-msg" id="PDRTJS_6780691_comm_12_msg" style="float:left; padding-left: 5px; text-align: left; font:normal normal /16px ; color: #;">Rate This</div><p style="padding: 0px; margin: 0px; clear: both;"></p></div>
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/?replytocom=12#respond" onclick="return addComment.moveForm( &quot;div-comment-12&quot;, &quot;12&quot;, &quot;respond&quot;, &quot;85&quot; )" aria-label="Reply to ahordijk">Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3 highlander-comment" id="comment-14">
+				<div id="div-comment-14" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/6f89e4fe2ad1ffcd40c2f32eff5d8fc0" class="avatar avatar-60 grav-hashed grav-hijack" height="60" width="60" id="grav-6f89e4fe2ad1ffcd40c2f32eff5d8fc0-0">			<cite class="fn">Jure</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#comment-14">
+			October 3, 2013 at 2:26 pm</a>		</div>
+
+		<p>Hello, very nice tutorial but I’m getting “exited with code 1” error if I specify the path of the output file. If I insert only the file name it doesn’t return any error but it also doesn’t create a file. Path to the installation folder of WIX is right. If you have any ideas what I am doing wrong please let me know. Here are the commands I use:</p>
+<p>call “C:\Program Files (x86)\WiX Toolset v3.7\bin\<span class="skimlinks-unlinked">heat.exe</span>”<br>
+dir “$(TargetDir).” -var <span class="skimlinks-unlinked">var.MyApp.TargetDir</span> -dr APPLICATIONFOLDER -cg Binaries -ag -scom -sreg -sfrag -srd  -o “C:\<span class="skimlinks-unlinked">Test.wxs</span>”</p>
+<p>Regard, Jure</p>
+<div class="pd-rating" id="pd_rating_holder_6780691_comm_14" style="display: inline-block;"><div class="rating-icons" id="pd_rate_6780691_comm_14" style="float:left;"><div class="rating-nero-icon" onmouseout="PDRTJS_6780691_comm_14.rebuild();" onclick="PDRTJS_6780691_comm_14.rate(1);" onmouseover="PDRTJS_6780691_comm_14.hover(1);" id="PDRTJS_6780691_comm_14_nero_1" style="background-size: 32px 32px !important; cursor: pointer; width: 16px; height: 16px;  line-height: 16px; background: url(https://polldaddy.com/images/ratings/nero-hand-sml.png) bottom left; float: left; padding: 0px; margin: 0px; margin: 0px;">&nbsp;</div><div class="rating-nero-value" id="PDRTJS_6780691_comm_14_msg_1" style="text-align: center; font:normal normal /16px ; color: #; float:left; padding: 0px 4px;">0</div><div class="rating-nero-icon" onmouseout="PDRTJS_6780691_comm_14.rebuild();" onclick="PDRTJS_6780691_comm_14.rate(2);" onmouseover="PDRTJS_6780691_comm_14.hover(2);" id="PDRTJS_6780691_comm_14_nero_2" style="background-size: 32px 32px !important; cursor: pointer; width: 16px; height: 16px;  line-height: 16px; background: url(https://polldaddy.com/images/ratings/nero-hand-sml.png) bottom right; float: left; padding: 0px; margin: 0px; margin: 0px;">&nbsp;</div><div class="rating-nero-value" id="PDRTJS_6780691_comm_14_msg_2" style="text-align: center; font:normal normal /16px ; color: #; float:left; padding: 0px 4px;">0</div></div><span style="float:left;">&nbsp;</span><div id="rating_info_6780691_comm_14" style="display:block;float:left;background:url(https://polldaddy.com/images/ratings/info.png) no-repeat 3px 2px;width:16px;height:16px;cursor:pointer; null " onclick="javascript:PDRTJS_6780691_comm_14.togglePopup();return false;"><span style="display:none;">i</span></div><div class="pd_popup_holder" id="pd_popup_holder_6780691_comm_14">&nbsp;</div><div class="rating-msg" id="PDRTJS_6780691_comm_14_msg" style="float:left; padding-left: 5px; text-align: left; font:normal normal /16px ; color: #;">Rate This</div><p style="padding: 0px; margin: 0px; clear: both;"></p></div>
+		
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-15">
+				<div id="div-comment-15" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/9eee0d0cec0c1adede860d6f46305370" class="avatar avatar-60 grav-hashed grav-hijack" height="60" width="60" id="grav-9eee0d0cec0c1adede860d6f46305370-0">			<cite class="fn">Steve Pennycooke</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#comment-15">
+			October 4, 2013 at 8:09 am</a>		</div>
+
+		<p>Nice one that’s turned out really helpful, thank you!!!</p>
+<div class="pd-rating" id="pd_rating_holder_6780691_comm_15" style="display: inline-block;"><div class="rating-icons" id="pd_rate_6780691_comm_15" style="float:left;"><div class="rating-nero-icon" onmouseout="PDRTJS_6780691_comm_15.rebuild();" onclick="PDRTJS_6780691_comm_15.rate(1);" onmouseover="PDRTJS_6780691_comm_15.hover(1);" id="PDRTJS_6780691_comm_15_nero_1" style="background-size: 32px 32px !important; cursor: pointer; width: 16px; height: 16px;  line-height: 16px; background: url(https://polldaddy.com/images/ratings/nero-hand-sml.png) bottom left; float: left; padding: 0px; margin: 0px; margin: 0px;">&nbsp;</div><div class="rating-nero-value" id="PDRTJS_6780691_comm_15_msg_1" style="text-align: center; font:normal normal /16px ; color: #; float:left; padding: 0px 4px;">0</div><div class="rating-nero-icon" onmouseout="PDRTJS_6780691_comm_15.rebuild();" onclick="PDRTJS_6780691_comm_15.rate(2);" onmouseover="PDRTJS_6780691_comm_15.hover(2);" id="PDRTJS_6780691_comm_15_nero_2" style="background-size: 32px 32px !important; cursor: pointer; width: 16px; height: 16px;  line-height: 16px; background: url(https://polldaddy.com/images/ratings/nero-hand-sml.png) bottom right; float: left; padding: 0px; margin: 0px; margin: 0px;">&nbsp;</div><div class="rating-nero-value" id="PDRTJS_6780691_comm_15_msg_2" style="text-align: center; font:normal normal /16px ; color: #; float:left; padding: 0px 4px;">0</div></div><span style="float:left;">&nbsp;</span><div id="rating_info_6780691_comm_15" style="display:block;float:left;background:url(https://polldaddy.com/images/ratings/info.png) no-repeat 3px 2px;width:16px;height:16px;cursor:pointer; null " onclick="javascript:PDRTJS_6780691_comm_15.togglePopup();return false;"><span style="display:none;">i</span></div><div class="pd_popup_holder" id="pd_popup_holder_6780691_comm_15">&nbsp;</div><div class="rating-msg" id="PDRTJS_6780691_comm_15_msg" style="float:left; padding-left: 5px; text-align: left; font:normal normal /16px ; color: #;">Rate This</div><p style="padding: 0px; margin: 0px; clear: both;"></p></div>
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/?replytocom=15#respond" onclick="return addComment.moveForm( &quot;div-comment-15&quot;, &quot;15&quot;, &quot;respond&quot;, &quot;85&quot; )" aria-label="Reply to Steve Pennycooke">Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+	</ol>
+
+	
+
+	
+		<div id="respond" class="comment-respond js">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://ahordijk.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="1b160d8479"><input type="hidden" name="_wp_http_referer" value="/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/">
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none solid rgba(0, 0, 0, 0.7); word-spacing: 0px; text-indent: 0px; line-height: normal; width: 583.484px;" class="autosizejs "></textarea><textarea id="comment" name="comment" title="Enter your comment here..." placeholder="Enter your comment here..." style="height: 36px; overflow: hidden; word-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource(9).html" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/ad516503a11cd5ca435acc9bb6523536" alt="Gravatar" width="25" class="no-grav">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value=""></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/ad516503a11cd5ca435acc9bb6523536" alt="WordPress.com Logo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your <span class="skimlinks-unlinked">WordPress.com</span> account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;wordpress&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/ad516503a11cd5ca435acc9bb6523536" alt="Twitter picture" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;twitter&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/ad516503a11cd5ca435acc9bb6523536" alt="Facebook photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;facebook&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/ad516503a11cd5ca435acc9bb6523536" alt="Google+ photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;googleplus&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+
+
+
+<p class="form-submit" style="display: none;"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="85" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8256151abb"></p>
+<input type="hidden" name="genseq" value="1516179161">
+<p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1516179163097"></form>
+			</div><!-- #respond -->
+	<div style="clear: both"></div>
+		
+		
+
+		</div><!-- end of #content -->
+
+
+		<div id="widgets" class="grid col-300 fit">
+		
+			<div id="gravatar-4" class="widget-wrapper widget_gravatar"><div class="widget-title">Arjan Hordijk</div><p><a href="http://en.gravatar.com/avatar/f1d6b9c35aafc02c71dd9b6c0f4cacf5?s=128&amp;r=any&amp;time=45479322&amp;d=mm"><img alt="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/f1d6b9c35aafc02c71dd9b6c0f4cacf5(2)" class="avatar avatar-96 grav-widget-none grav-hashed" height="96" width="96" id="grav-f1d6b9c35aafc02c71dd9b6c0f4cacf5-2"></a></p>
+</div><div id="search-2" class="widget-wrapper widget_search"><div class="widget-title">Search a blog</div>
+	<form method="get" id="searchform" action="https://ahordijk.wordpress.com/">
+		<input type="text" class="field" name="s" id="s" placeholder="search here …">
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Go">
+	</form></div><div id="wp_tag_cloud-4" class="widget-wrapper wp_widget_tag_cloud"><div class="widget-title">Tags</div><div style="overflow:hidden"><a href="https://ahordijk.wordpress.com/tag/caml/" class="tag-cloud-link tag-link-2123163 tag-link-position-1" style="font-size: 8pt;" aria-label="CAML (1 item)">CAML</a>
+<a href="https://ahordijk.wordpress.com/tag/csom/" class="tag-cloud-link tag-link-5902045 tag-link-position-2" style="font-size: 8pt;" aria-label="CSOM (1 item)">CSOM</a>
+<a href="https://ahordijk.wordpress.com/tag/heat/" class="tag-cloud-link tag-link-43536 tag-link-position-3" style="font-size: 8pt;" aria-label="Heat (1 item)">Heat</a>
+<a href="https://ahordijk.wordpress.com/tag/hosted-apps/" class="tag-cloud-link tag-link-9559474 tag-link-position-4" style="font-size: 22pt;" aria-label="Hosted Apps (2 items)">Hosted Apps</a>
+<a href="https://ahordijk.wordpress.com/tag/installer/" class="tag-cloud-link tag-link-212876 tag-link-position-5" style="font-size: 8pt;" aria-label="Installer (1 item)">Installer</a>
+<a href="https://ahordijk.wordpress.com/tag/knockout/" class="tag-cloud-link tag-link-747196 tag-link-position-6" style="font-size: 8pt;" aria-label="Knockout (1 item)">Knockout</a>
+<a href="https://ahordijk.wordpress.com/tag/metro-style/" class="tag-cloud-link tag-link-1143592 tag-link-position-7" style="font-size: 8pt;" aria-label="Metro Style (1 item)">Metro Style</a>
+<a href="https://ahordijk.wordpress.com/tag/microsoft/" class="tag-cloud-link tag-link-637 tag-link-position-8" style="font-size: 8pt;" aria-label="Microsoft (1 item)">Microsoft</a>
+<a href="https://ahordijk.wordpress.com/tag/mvvm/" class="tag-cloud-link tag-link-9258762 tag-link-position-9" style="font-size: 8pt;" aria-label="MVVM (1 item)">MVVM</a>
+<a href="https://ahordijk.wordpress.com/tag/remove-vs2012-rtm/" class="tag-cloud-link tag-link-115878456 tag-link-position-10" style="font-size: 8pt;" aria-label="Remove VS2012 RTM (1 item)">Remove VS2012 RTM</a>
+<a href="https://ahordijk.wordpress.com/tag/sharepoint-2013/" class="tag-cloud-link tag-link-77161000 tag-link-position-11" style="font-size: 22pt;" aria-label="SharePoint 2013 (2 items)">SharePoint 2013</a>
+<a href="https://ahordijk.wordpress.com/tag/spa/" class="tag-cloud-link tag-link-40686 tag-link-position-12" style="font-size: 8pt;" aria-label="SPA (1 item)">SPA</a>
+<a href="https://ahordijk.wordpress.com/tag/upgrade/" class="tag-cloud-link tag-link-8683 tag-link-position-13" style="font-size: 8pt;" aria-label="Upgrade (1 item)">Upgrade</a>
+<a href="https://ahordijk.wordpress.com/tag/virtual-build/" class="tag-cloud-link tag-link-64463669 tag-link-position-14" style="font-size: 8pt;" aria-label="Virtual Build (1 item)">Virtual Build</a>
+<a href="https://ahordijk.wordpress.com/tag/visual-studio-2012-premium/" class="tag-cloud-link tag-link-115878455 tag-link-position-15" style="font-size: 8pt;" aria-label="Visual Studio 2012 Premium (1 item)">Visual Studio 2012 Premium</a>
+<a href="https://ahordijk.wordpress.com/tag/visual-studio-2012-ultimate-rtm/" class="tag-cloud-link tag-link-115878453 tag-link-position-16" style="font-size: 8pt;" aria-label="Visual Studio 2012 Ultimate RTM (1 item)">Visual Studio 2012 Ultimate RTM</a>
+<a href="https://ahordijk.wordpress.com/tag/vs2012/" class="tag-cloud-link tag-link-56279239 tag-link-position-17" style="font-size: 22pt;" aria-label="VS2012 (2 items)">VS2012</a>
+<a href="https://ahordijk.wordpress.com/tag/vs_ultimatecore/" class="tag-cloud-link tag-link-115878457 tag-link-position-18" style="font-size: 8pt;" aria-label="vs_ultimatecore (1 item)">vs_ultimatecore</a>
+<a href="https://ahordijk.wordpress.com/tag/windows8/" class="tag-cloud-link tag-link-17315706 tag-link-position-19" style="font-size: 8pt;" aria-label="Windows8 (1 item)">Windows8</a>
+<a href="https://ahordijk.wordpress.com/tag/winrt/" class="tag-cloud-link tag-link-59597472 tag-link-position-20" style="font-size: 8pt;" aria-label="WinRt (1 item)">WinRt</a>
+<a href="https://ahordijk.wordpress.com/tag/wix/" class="tag-cloud-link tag-link-783053 tag-link-position-21" style="font-size: 22pt;" aria-label="WIX (2 items)">WIX</a>
+<a href="https://ahordijk.wordpress.com/tag/wizwix/" class="tag-cloud-link tag-link-160197688 tag-link-position-22" style="font-size: 22pt;" aria-label="WizWix (2 items)">WizWix</a></div></div>		<div id="recent-posts-2" class="widget-wrapper widget_recent_entries">		<div class="widget-title">Recent</div>		<ul>
+											<li>
+					<a href="https://ahordijk.wordpress.com/2013/04/17/only-tenant-administrators-can-add-or-give-access-to-this-app/">Only tenant administrators can add or give access to this&nbsp;app</a>
+									</li>
+											<li>
+					<a href="https://ahordijk.wordpress.com/2013/04/05/building-sharepoint-2013-mvvm-apps-the-bucket-list/">Building SharePoint 2013 MVVM Apps – The Bucket&nbsp;List</a>
+									</li>
+											<li>
+					<a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/">Automatically add references and content to the WIX&nbsp;installer</a>
+									</li>
+											<li>
+					<a href="https://ahordijk.wordpress.com/2013/03/26/creating-a-wix-installer-in-vs2012/">Creating A WIX installer in&nbsp;VS2012</a>
+									</li>
+											<li>
+					<a href="https://ahordijk.wordpress.com/2012/09/26/how-to-install-visual-studio-2012-premium-after-2012-ultimate-rtm/">How to install Visual Studio 2012 Premium after 2012 Ultimate&nbsp;RTM</a>
+									</li>
+					</ul>
+		</div><div id="blog-stats-3" class="widget-wrapper widget_blog-stats"><div class="widget-title">Blog Stats</div>		<ul>
+			<li>45,678 hits</li>
+		</ul>
+		</div><div id="blog_subscription-3" class="widget-wrapper widget_blog_subscription"><div class="widget-title"><label for="subscribe-field">Follow Blog via Email</label></div>
+				<form action="https://subscribe.wordpress.com/" method="post" accept-charset="utf-8" id="subscribe-blog">
+											<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+						<p><input type="text" name="email" style="width: 95%; padding: 1px 2px" placeholder="Enter your email address" value="" id="subscribe-field"></p>
+					
+					<p>
+						<input type="hidden" name="action" value="subscribe">
+						<input type="hidden" name="blog_id" value="27430874">
+						<input type="hidden" name="source" value="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/">
+						<input type="hidden" name="sub-type" value="widget">
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-3">
+						<input type="hidden" id="_wpnonce" name="_wpnonce" value="2794a3ab8b">						<input type="submit" value="Follow">
+					</p>
+				</form>
+			
+</div><div id="rss_links-3" class="widget-wrapper widget_rss_links"><ul><li><a href="https://ahordijk.wordpress.com/feed/" title="Subscribe to Posts">RSS - Posts</a></li><li><a href="https://ahordijk.wordpress.com/comments/feed/" title="Subscribe to Comments">RSS - Comments</a></li></ul>
+</div>
+		</div><!-- end of #widgets -->
+	</div><!-- end of #wrapper -->
+
+</div><!-- end of #container -->
+
+<div id="footer" class="clearfix">
+
+	<div id="footer-wrapper">
+
+		<div class="grid col-940">
+
+		<div class="grid col-540">
+				</div><!-- end of col-540 -->
+
+		
+		</div><!-- end of col-940 -->
+		
+	
+		<div class="grid col-300 copyright">
+			© 2018 <a href="https://ahordijk.wordpress.com/" title="Arjan Hordijk">Arjan Hordijk</a>
+		</div><!-- end of .copyright -->
+
+		<div class="grid col-300 scroll-top"><a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#scroll-top" title="scroll to top">↑</a></div>
+
+		<div class="grid col-300 fit powered">
+						<a href="https://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com.</a>
+			
+					</div><!-- end .powered -->
+
+	</div><!-- end #footer-wrapper -->
+
+</div><!-- end #footer -->
+
+<!--  -->
+<script type="text/javascript" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/wpgroho.js"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-f1d6b9c35aafc02c71dd9b6c0f4cacf5">
+	</div>
+	<div class="grofile-hash-map-d07757938aa942b603f8e6b2b9599210">
+	</div>
+	<div class="grofile-hash-map-f1d6b9c35aafc02c71dd9b6c0f4cacf5">
+	</div>
+	<div class="grofile-hash-map-6f89e4fe2ad1ffcd40c2f32eff5d8fc0">
+	</div>
+	<div class="grofile-hash-map-9eee0d0cec0c1adede860d6f46305370">
+	</div>
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/ahordijk.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/ahordijk.wordpress.com\/wp-login.php?action=logout&_wpnonce=a4170c9624","homeURL":"https:\/\/ahordijk.wordpress.com\/","postID":"85","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource(4)"></script>
+
+	<div id="carousel-reblog-box">
+		<form action="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post">
+				<input type="hidden" id="carousel-reblog-blog-id" value="27430874">
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://ahordijk.wordpress.com">
+				<input type="hidden" id="carousel-reblog-blog-title" value="Arjan Hordijk">
+				<input type="hidden" id="carousel-reblog-post-url" value="">
+				<input type="hidden" id="carousel-reblog-post-title" value="">
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="47924bd6c1"><input type="hidden" name="_wp_http_referer" value="/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/">		</form>
+
+		<div class="arrow"></div>
+	</div>
+<script type="text/javascript" charset="UTF-8" id="polldaddyRatings"><!--//--><![CDATA[//><!--
+PDRTJS_settings_6780689_post_85={"id":6780689,"unique_id":"wp-post-85","title":"Automatically%20add%20references%20and%20content%20to%20the%20WIX%26nbsp%3Binstaller","permalink":"https:\/\/ahordijk.wordpress.com\/2013\/03\/26\/automatically-add-references-and-content-to-the-wix-installer\/","item_id":"_post_85"}; if ( typeof PDRTJS_RATING !== 'undefined' ){if ( typeof PDRTJS_6780689_post_85 == 'undefined' ){PDRTJS_6780689_post_85 = new PDRTJS_RATING( PDRTJS_settings_6780689_post_85 );}}PDRTJS_settings_6780691_comm_11={"id":6780691,"unique_id":"wp-comment-11","title":"Arjan%2C%20when%20I%20run%20your%20demo%20code%20straight%20from%20CodePlex%2C%20I%20am%20getting%20an%20error%20that%20the%20prebuild%20event%20exited%20with%20a%20code%20of%201.%20Please%20advise%20on%20how%20to%20fix%20this%20or%20what%20the%20problem%20might%20be.%20From...","permalink":"https:\/\/ahordijk.wordpress.com\/2013\/03\/26\/automatically-add-references-and-content-to-the-wix-installer\/#comment-11","item_id":"_comm_11"}; if ( typeof PDRTJS_RATING !== 'undefined' ){if ( typeof PDRTJS_6780691_comm_11 == 'undefined' ){PDRTJS_6780691_comm_11 = new PDRTJS_RATING( PDRTJS_settings_6780691_comm_11 );}}PDRTJS_settings_6780691_comm_12={"id":6780691,"unique_id":"wp-comment-12","title":"Hi%20Isaiah%2C%20The%20prebuild%20events%20expects%20Wix%20installed%20in%20C%3AProgram%20Files%20%28x86%29WiX%20Toolset%20v3.7.Perhaps%20this%20is%20not%20the%20case%20in%20your%20environment%3F%20Hope%20this%20will%20help%20you....","permalink":"https:\/\/ahordijk.wordpress.com\/2013\/03\/26\/automatically-add-references-and-content-to-the-wix-installer\/#comment-12","item_id":"_comm_12"}; if ( typeof PDRTJS_RATING !== 'undefined' ){if ( typeof PDRTJS_6780691_comm_12 == 'undefined' ){PDRTJS_6780691_comm_12 = new PDRTJS_RATING( PDRTJS_settings_6780691_comm_12 );}}PDRTJS_settings_6780691_comm_14={"id":6780691,"unique_id":"wp-comment-14","title":"Hello%2C%20very%20nice%20tutorial%20but%20I%26%23039%3Bm%20getting%20%26quot%3Bexited%20with%20code%201%26quot%3B%20error%20if%20I%20specify%20the%20path%20of%20the%20output%20file.%20If%20I%20insert%20only%20the%20file%20name%20it%20doesn%26%23039%3Bt%20return%20any%20error%20but%20it%20also%20doesn%26%23039%3Bt%20creat...","permalink":"https:\/\/ahordijk.wordpress.com\/2013\/03\/26\/automatically-add-references-and-content-to-the-wix-installer\/#comment-14","item_id":"_comm_14"}; if ( typeof PDRTJS_RATING !== 'undefined' ){if ( typeof PDRTJS_6780691_comm_14 == 'undefined' ){PDRTJS_6780691_comm_14 = new PDRTJS_RATING( PDRTJS_settings_6780691_comm_14 );}}PDRTJS_settings_6780691_comm_15={"id":6780691,"unique_id":"wp-comment-15","title":"Nice%20one%20that%26%23039%3Bs%20turned%20out%20really%20helpful%2C%20thank%20you%21%21%21...","permalink":"https:\/\/ahordijk.wordpress.com\/2013\/03\/26\/automatically-add-references-and-content-to-the-wix-installer\/#comment-15","item_id":"_comm_15"}; if ( typeof PDRTJS_RATING !== 'undefined' ){if ( typeof PDRTJS_6780691_comm_15 == 'undefined' ){PDRTJS_6780691_comm_15 = new PDRTJS_RATING( PDRTJS_settings_6780691_comm_15 );}}
+//--><!]]></script><script type="text/javascript" charset="UTF-8" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/rating.js"></script>
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/ahordijk.wordpress.com\/2013\/03\/26\/automatically-add-references-and-content-to-the-wix-installer\/":85};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+		<link rel="stylesheet" id="all-css-0-3" href="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/jetpack-carousel.css" type="text/css" media="all">
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel-ie8fix.css?m=1412618825h&#038;ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"27430874","siteName":"Arjan Hordijk","siteURL":"http:\/\/ahordijk.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/e662865bca358c5bcc3ca7493606c15f?s=50&d=https%3A%2F%2Fs1.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/responsive","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/ahordijk.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fahordijk.wordpress.com%2F2013%2F03%2F26%2Fautomatically-add-references-and-content-to-the-wix-installer%2F","themeURL":"","xhrURL":"https:\/\/ahordijk.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"a754339bf7","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"2794a3ab8b\" \/>","referer":"https:\/\/ahordijk.wordpress.com\/2013\/03\/26\/automatically-add-references-and-content-to-the-wix-installer\/","canFollow":"1","feedID":"9462017","statusMessage":"","customizeLink":"https:\/\/ahordijk.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fahordijk.wordpress.com%2F2013%2F03%2F26%2Fautomatically-add-references-and-content-to-the-wix-installer%2F","postID":"85","shortlink":"https:\/\/wp.me\/p1R61s-1n","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/ahordijk.wordpress.com\/85","statsLink":"https:\/\/wordpress.com\/stats\/post\/85\/ahordijk.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Responsive","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/ahordijk.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fahordijk.wordpress.com%2F2013%2F03%2F26%2Fautomatically-add-references-and-content-to-the-wix-installer%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/ahordijk.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"b7c1cf0811","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/ahordijk.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fahordijk.wordpress.com%2F2013%2F03%2F26%2Fautomatically-add-references-and-content-to-the-wix-installer%2F","blog_id":"27430874","local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=27430874&v=wpcom&tz=0&user_id=0&subd=ahordijk","is_public":"1","reblog_enabled":""};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource(5)"></script><div id="actionbar" class="actnbr-pub-responsive actnbr-has-follow"><ul><li class="actnbr-btn actnbr-hidden"> 			    	<a class="actnbr-action actnbr-actn-follow" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a> 			    	<div class="actnbr-popover tip tip-top-left actnbr-notice"> 			    		<div class="tip-arrow"></div> 			    		<div class="tip-inner actnbr-follow-bubble"></div> 			    	</div> 			    </li><li class="actnbr-ellipsis actnbr-hidden"> 			  <svg class="gridicon gridicon__ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><circle cx="5" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle></g></svg> 			  <div class="actnbr-popover tip tip-top-left actnbr-more"> 			  	<div class="tip-arrow"></div> 			  	<div class="tip-inner"> 				  <ul> 				    <li class="actnbr-sitename actnbr-hidden"><a href="http://ahordijk.wordpress.com/"><img alt="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/e662865bca358c5bcc3ca7493606c15f" class="avatar avatar-50" height="50" width="50"> Arjan Hordijk</a></li> 				   	<li class="actnbr-folded-customize actnbr-hidden"><a href="https://ahordijk.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fahordijk.wordpress.com%2F2013%2F03%2F26%2Fautomatically-add-references-and-content-to-the-wix-installer%2F"><svg class="gridicon gridicon__customize" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z" data-reactid=".2.1.1:0.1b.0"></path></g></svg><span>Customize<span></span></span></a></li> 				    <li class="actnbr-folded-follow actnbr-hidden"><a class="actnbr-action actnbr-actn-follow" href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a></li> 					<li class="actnbr-signup actnbr-hidden"><a href="https://wordpress.com/start/">Sign up</a></li> 				    <li class="actnbr-login actnbr-hidden"><a href="https://ahordijk.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fahordijk.wordpress.com%2F2013%2F03%2F26%2Fautomatically-add-references-and-content-to-the-wix-installer%2F">Log in</a></li> 				     				    <li class="actnbr-shortlink actnbr-hidden"><a href="https://wp.me/p1R61s-1n">Copy shortlink</a></li> 				    <li class="flb-report actnbr-hidden"><a href="http://en.wordpress.com/abuse/">Report this content</a></li> 				     				     				    <li class="actnbr-subs actnbr-hidden"><a href="https://subscribe.wordpress.com/">Manage subscriptions</a></li> 				    <li class="actnbr-fold actnbr-hidden"><a href="https://ahordijk.wordpress.com/2013/03/26/automatically-add-references-and-content-to-the-wix-installer/">Collapse this bar</a></li> 			      </ul> 			    </div> 		      </div> 		    </li> 	      </ul></div>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "ahordijk.wordpress.com";
+	</script>
+	<script type="text/javascript" defer="" src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/725X1342.skimlinks.js"></script>		<iframe src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/w.js" type="text/javascript" async="" defer=""></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'27430874','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'27430874','v':'wpcom','tz':'0','user_id':'0','post':'85','subd':'ahordijk'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdTdvUG14Q2VDQTR4LlUsLi82dU1mai9BMlM3WERPK2dYK1ZkRnhaW20rR2JXREZZa1R3RyVjOEdveUQ5PU44ZVE1aC91WjMyMkl1fDhyR0c0LEU9M3dbV2U1Wk8xT3ZTMy1yJmcuPV9UeEJOJjh2cUloLWxfRzhUSG18blljK091RF12cTNNYWVoTXxWfl0sa1RMa3wxLEYwLGsveFVnMmhyQzkvVX45MlVxOUlPODVSNGN6W3hMQ2VyJUE2Zl9jYWRXUFJuRlMzclk9fE5MZEtnfkFRXWZ2RW5ZMDl2OHEwTGhRRGNXb21LdWRZVXZtZS9xYj9UTWw1czBZMH5rZyxOc2FLd2FsTXVvJlgrNXJuRSZmWG9ySi0tQ1RoL3BHbD1FL3BmP3dESzcr'}]);
+_stq.push([ 'clickTrackerInit', '27430874', '85' ]);
+	</script>
+<noscript>&lt;img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /&gt;</noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<!--
+	generated in 0.170 seconds
+	80661 bytes batcached for 300 seconds
+-->
+<script>var _getNodumDebugIdentifier = function(){ return (typeof $nodum_debugConsole_baselocation == 'string' && typeof $nodum_debugConsole_identifier == 'string' ? { baselocation : $nodum_debugConsole_baselocation, identifier: $nodum_debugConsole_identifier } : null); };if(typeof _getNodumDebugIdentifier == "function"){ var _debugContent = _getNodumDebugIdentifier(); if (_debugContent) { /*console.log(_debugContent);*/ window.postMessage("run-nodum::"+JSON.stringify(_debugContent),document.location.href) }; };</script><img src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/g.gif" alt=":)" id="wpstats"><div id="CWSE-overlay-initial"></div>	<div id="CWSE-overlay-primary"><div class="optimizer-container">	<i id="optimizer-close">X</i>	<div class="content"></div>	</div></div><img src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource(6)" width="1" height="1" style="display: none;"><img src="./Automatically add references and content to the WIX installer _ Arjan Hordijk_files/saved_resource(7)" width="1" height="1" style="display: none;"><a href="http://en.gravatar.com/avatar/f1d6b9c35aafc02c71dd9b6c0f4cacf5?s=128&amp;r=any&amp;time=45479322&amp;d=mm" style="position: absolute; top: 262.391px; left: 1467.02px; z-index: 15; border: none; text-decoration: none;"></a></body></html>
