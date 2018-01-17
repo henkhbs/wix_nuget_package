@@ -1,0 +1,17 @@
+﻿<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <FeatureGroup Id="CompleteFeatures">
+      <Feature Id="Complete" Level="1">
+        <ComponentGroupRef Id="ProductComponents"/>
+        <ComponentRef Id="ProgramMenuDir" />
+        <ComponentRef Id="CMP_WIXDemo" />
+      </Feature>
+    </FeatureGroup>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="APPLICATIONFOLDER">
+      <ComponentGroupRef Id="Binaries"/>
+      <ComponentGroupRef Id="WIXDemo.Content"/>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

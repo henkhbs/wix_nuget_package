@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="APPLICATIONFOLDER">
+            <Directory Id="dir4397D0CC8E44EFE509FF9BFBA3C2826F" Name="Resources">
+                <Component Id="cmpD660756D37C3311EB422D39003C2184F" Guid="*">
+                    <File Id="fil38859050296DC795475B6D92789EBD1C" Source="$(var.WIXDemo.ProjectDir)\Resources\Image1.png" />
+                </Component>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="WIXDemo.Content">
+            <ComponentRef Id="cmpD660756D37C3311EB422D39003C2184F" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

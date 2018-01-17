@@ -1,0 +1,34 @@
+﻿<?include common.wxi ?>
+<Wix xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <Property Id="DirectoryStructure" Value="1" />
+    <!-- Installation Folder -->
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="ManufacturerFolder" Name="$(var.MANUFACTURER)">
+          <Directory Id="APPLICATIONFOLDER" Name="$(var.PRODUCT)"></Directory>
+        </Directory>
+      </Directory>
+      <!-- Start Menu Folder -->
+      <Directory Id="ProgramMenuFolder" Name="Programs">
+        <Directory Id="ProgramMenuDir" Name="$(var.PRODUCT)">
+          <Component Id="ProgramMenuDir" Guid="a20dd638-85db-4771-9018-425315671dc6">
+            <RemoveFolder Id="ProgramMenuDir" On="uninstall" />
+            <RegistryValue Root="HKCU" Key="Software\$(var.MANUFACTURER)\$(var.PRODUCT)" Type="string" Value="" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      <!-- Desktop Folder -->
+      <Directory Id="DesktopFolder" Name="Desktop" />
+    </Directory>
+    <DirectoryRef Id="APPLICATIONFOLDER">
+      <Component Id="CMP_WIXDemo" Guid="dba74a12-d63b-4397-a865-0c2236a3341e">
+        <File Id="File_WIXDemo" Source="$(var.WIXDemo.TargetDir)WIXDemo.exe" KeyPath="yes">
+          <Shortcut Id="SM_WIXDemo" Directory="ProgramMenuDir" Name="WIXDemo" WorkingDirectory="APPLICATIONFOLDER" Icon="APPLICATIONICON.ico" IconIndex="0" Advertise="yes" />
+          <Shortcut Id="DT_WIXDemo" Directory="DesktopFolder" Name="WIXDemo" WorkingDirectory="APPLICATIONFOLDER" Icon="APPLICATIONICON.ico" IconIndex="0" Advertise="yes" />
+          <netfx:NativeImage Id="NG_WIXDemo" Platform="all" Priority="0" AppBaseDirectory="APPLICATIONFOLDER" />
+        </File>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+</Wix>
